@@ -14,17 +14,17 @@ This repository contains an implementation of the REINFORCE algorithm using Pyth
 
 Before getting started, you need to have Python 3.x and PyTorch installed on your machine. To install the required dependencies, run the following command:
 
-\```bash
+```bash
 pip install -r requirements.txt
-\```
+```
 
 ## Usage
 
 To use the REINFORCE algorithm implementation, you need to import the `REINFORCE` class from `reinforce.py`:
 
-\```python
+```python
 from reinforce import REINFORCE
-\```
+```
 
 Then, create an instance of the `REINFORCE` class, passing in the environment, network architecture, learning rate, and other optional parameters as necessary:
 
