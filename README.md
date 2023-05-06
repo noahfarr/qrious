@@ -12,7 +12,7 @@ This repository contains an implementation of the REINFORCE algorithm using Pyth
 
 ## Installation
 
-Before getting started, you need to have Python 3.x and PyTorch installed on your machine. To install the required dependencies, run the following command:
+Before getting started, you need to have Python 3.10 and PyTorch installed on your machine. To install the required dependencies, run the following command:
 
 ```bash
 pip install -r requirements.txt
@@ -28,23 +28,23 @@ from reinforce import REINFORCE
 
 Then, create an instance of the `REINFORCE` class, passing in the environment, network architecture, learning rate, and other optional parameters as necessary:
 
-\```python
+```python
 agent = REINFORCE(env, network, learning_rate=0.01)
-\```
+```
 
 Finally, train the agent using the `train` method, specifying the number of episodes and other optional parameters:
 
-\```python
+```python
 agent.train(num_episodes=1000)
-\```
+```
 
 ## Example
 
 An example usage of this implementation can be found in the `example.py` file, which demonstrates training an agent to solve the CartPole-v0 environment from the OpenAI Gym:
 
-\```bash
+```bash
 python example.py
-\```
+```
 
 ## Contributing
 
