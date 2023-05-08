@@ -5,8 +5,6 @@ This repository contains an implementation of different reinforcement learning a
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Example](#example)
 - [Contributing](#contributing)
 - [License](#license)
 
