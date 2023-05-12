@@ -1,8 +1,8 @@
+from abc import ABC, abstractmethod
 import torch
 import torch.nn as nn
 
-
-class Network(nn.Module):
+class Network(nn.Module, ABC):
     """
     A neural network model for representing a policy in reinforcement learning.
 
@@ -21,14 +21,14 @@ class Network(nn.Module):
             layers += [layer, activation_function()]
         self.model = nn.Sequential(*layers)
 
+    @abstractmethod
     def forward(self, x):
         """
         Forward pass through the policy network.
-
-        Args:
-            x (torch.Tensor): The input tensor.
-
-        Returns:
-            torch.Tensor: The output tensor.
         """
-        return self.model(x)
+        pass
+
+    def update(self, optimizer, loss):
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step() 
