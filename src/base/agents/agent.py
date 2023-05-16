@@ -13,7 +13,7 @@ class Agent(ABC):
         return self.policy(obs).sample().item()
 
     @abstractmethod
-    def calculate_loss(self):
+    def compute_loss(self):
         pass
 
     @abstractmethod
